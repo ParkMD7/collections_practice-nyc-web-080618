@@ -52,11 +52,11 @@ end
 
 
 def add_s(array)
-  plural = []
-  
-  array.reject {|u| u == array[1]}.collect do |word|
+  array.collect do |word|
     #binding.pry
-      word + "s"
-  end
-  
+      if word[1] == word
+        word
+      else
+        word + "s"
+      end
 end
