@@ -56,7 +56,7 @@ def add_s(array)
   
   array.reject {|u| u == array[1]}.collect do |word|
     #binding.pry
-      
+      word + "s"
   end
   
 end
